@@ -1,0 +1,15 @@
+<h2>Favorite Items</h2>
+<div *ngIf="favoriteItems.length > 0; else noFavorites">
+  <div *ngFor="let item of favoriteItems" class="favorite-item">
+    <img [src]="item.image" alt="{{ item.name }}" />
+    <div>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+      <p>₹{{ item.cost }}</p>
+      <button (click)="removeFromFavorites(item)">Remove from Favorites</button>
+    </div>
+  </div>
+</div>
+<ng-template #noFavorites>
+  <p>No items in favorites.</p>
+</ng-template>

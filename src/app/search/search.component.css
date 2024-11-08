@@ -1,0 +1,54 @@
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  text-align: left;
+  width: 80%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 17%;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 17%;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  text-align: center;
+  width: 100px;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}

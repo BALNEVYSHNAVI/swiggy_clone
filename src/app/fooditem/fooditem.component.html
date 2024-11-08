@@ -1,0 +1,10 @@
+
+<div *ngIf="food" class="food-detail">
+    <img [src]="food.image" alt="{{ food.name }}" class="food-image">
+    <h1>{{ food.name }}</h1>
+    <p class="food-cost">Cost: ₹{{ food.cost }}</p>
+    <p class="food-description">{{ food.description }}</p>
+    <button (click)="addToCart(food)" class="add-to-cart-btn">Add to Cart</button>
+    <p *ngIf="message" class="cart-message">{{ message }}</p>
+  </div>
+  

@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <div class="logo">
+      <img src="assets/swiggy_logo.png" alt="Swiggy Logo" />
+    </div>
+    <div class="links">
+      <a href="#">Swiggy Corporate</a>
+      <a [routerLink]="['/search']">🔍Search</a>
+      <a href="#">Offers</a>
+      <a href="#">Help</a>
+      <a [routerLink]="['/sign-in']">👤Sign In</a>
+      <a [routerLink]="['/cart']">🛒Cart</a>
+      <a [routerLink]="['/fav']">favorite</a>
+    </div>
+  </nav>
+
+  <section class="list">
+    <h2>What's on your mind?</h2>
+    <div class="options">
+      <div class="item" *ngFor="let food of foods">
+        <a [routerLink]="['/food', food.name]">
+          <img [src]="food.image" alt="{{ food.name }}" class="food-image">
+          <h2>{{ food.name }}</h2>
+        </a>
+      </div>
+    </div>
+  </section>
+ 
