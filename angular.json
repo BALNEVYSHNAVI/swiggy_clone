@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/clone",
+            "outputPath": "dist/swiggy_clone",
             "baseHref": "/swiggy_clone/"
             "index": "src/index.html",
             "browser": "src/main.ts",
